@@ -10,7 +10,7 @@
     </div>
     <div class="iconItem">
       <svg class="icon" aria-hidden="true">
-        <use xlink:href="#icon-calendar"></use>
+        <use xlink:href="#icon-diantai"></use>
       </svg>
       <span>私人FM</span>
     </div>
@@ -29,8 +29,27 @@
   </div>
 </template>
 <script>
-
+export default {
+  name: 'iconList'
+}
 </script>
 <style lang="scss" scoped>
+.iconList{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .iconItem{
+    display: flex;
+    flex-flow: column;
+    //width: 1.3rem;
+    align-items: center;
+    //justify-content: center;
+    font-size: 0.3rem;
+    .icon{
+      width: 1rem;
+      height: 1rem;
+    }
+  }
 
+}
 </style>

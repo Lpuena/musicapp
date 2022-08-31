@@ -26,10 +26,20 @@
         </van-swipe-item>
       </van-swipe>
     </div>
+
+    <div>
+      <iconList></iconList>
+      <music-list></music-list>
+
+    </div>
+
   </div>
 </template>
 
 <script>
+
+import iconList from '@/components/iconList'
+import musicList from '@/components/musicList'
 import { getBanner } from '@/api/index'
 
 export default {
@@ -40,6 +50,8 @@ export default {
     }
   },
   components: {
+    iconList,
+    musicList
   },
   created() {
     getBanner(2).then((res) => {

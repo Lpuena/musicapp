@@ -9,3 +9,8 @@ import axios from 'axios'
 export function getBanner(type) {
   return axios.get(`http://localhost:3000/banner?type=${type}`)
 }
+
+// 获取推荐歌单
+export function getMusicList(limit = 1) {
+  return axios.get('http://localhost:3000/personalized?limit=' + limit)
+}
